@@ -1,0 +1,10 @@
+create table tasks
+(
+    id          serial                    not null
+        constraint task_pk
+            primary key,
+    title       varchar(50)               not null,
+    description varchar(255)              not null,
+    status      varchar(10) default 'new' not null
+);
+
